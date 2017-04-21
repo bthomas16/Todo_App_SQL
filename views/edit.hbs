@@ -1,0 +1,30 @@
+<form action="/todo/{{id}}?_method=PUT" method="post">
+  <div class="todo-form-wrapper">
+    <div class="form-title">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title" value="{{title}}" placeholder="Enter a todo">
+      <!-- <input type="text" name="title" id="title" value="" placeholder="Enter a todo"> -->
+    </div>
+    <div class="form-description">
+      <label for="description"></label>
+      <textarea name="description" id="description"  rows="8" cols="80" placeholder="Enter a Description">{{description}}</textarea>
+      <!-- <textarea type="text" name="description" id="description" placeholder="Enter a Description"></textarea> -->
+    </div>
+    <div class="form-priority">
+      <label for="priority">Priority:</label>
+      <select name="priority" id="priority">
+        {{#select priority}}
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        {{/select}}
+      </select>
+    </div>
+    <div class="form-button">
+    <button type="submit" name="button">Update</button>
+  </div>
+  </div>
+
+</form>

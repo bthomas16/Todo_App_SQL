@@ -1,0 +1,14 @@
+<div class="">
+  <h2>{{title}}</h2><h2>{{priority}}</h2>
+</div>
+
+<h4>{{description}}</h4>
+<p>{{date}}</p>
+
+<a href="/todo/{{id}}/edit"><button>Edit</button></a>
+
+<form class="" action="/todo/{{id}}?_method=DELETE" method="post">
+  <button type="submit">Delete</button>
+</form>
+
+<a href="/todo"><button>Home</button></a>
